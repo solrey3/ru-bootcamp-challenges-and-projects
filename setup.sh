@@ -1,13 +1,38 @@
 #!/bin/bash
 
-# List of repositories to exclude
+# Initialize an empty array to hold all repository names
+all_repos=()
 
-# Get list of repositories to add as submodules
-repos=$(gh repo list solrey3 --json name --jq '.[].name' | grep -E '(-challenge|-Challenge|Project)')
+# Fetch repositories page by page
+page=1
+while true; do
+  repos=$(gh repo list solrey3 --json name --jq '.[].name' --page $page --limit 100)
+  if [ -z "$repos" ]; then
+    break
+  fi
+  all_repos+=($repos)
+  ((page++))
+done
 
-for repo in $repos; do
-  # Add the repository as a submodule
-  git submodule add https://github.com/solrey3/$repo.git $repo
+# Filter and add the repositories as submodules
+for repo in "${all_repos[@]}"; do
+  # Check if the repository name matches the desired patterns
+  if [[ "$repo" =~ (-challenge|-Challenge|Project) ]]; then
+    # Skip the excluded repositories
+    if [[ " ${EXCLUDE_REPOS[@]} " =~ " ${repo} " ]]; then
+      echo "Skipping $repo"
+      continue
+    fi
+
+    # Check if the submodule already exists
+    if [ -d "$repo" ]; then
+      echo "Submodule $repo already exists, skipping"
+      continue
+    fi
+
+    # Add the repository as a submodule
+    git submodule add https://github.com/solrey3/$repo.git $repo
+  fi
 done
 
 # Initialize and update submodules
