@@ -28,3 +28,27 @@
 [submodule "Project_2020_05"]
 	path = Project_2020_05
 	url = https://github.com/solrey3/Project_2020_05.git
+[submodule "sql-challenge"]
+	path = sql-challenge
+	url = https://github.com/solrey3/sql-challenge.git
+[submodule "RU-Bootcamp-Project1"]
+	path = RU-Bootcamp-Project1
+	url = https://github.com/solrey3/RU-Bootcamp-Project1.git
+[submodule "python-api-challenge"]
+	path = python-api-challenge
+	url = https://github.com/solrey3/python-api-challenge.git
+[submodule "Project1-2020"]
+	path = Project1-2020
+	url = https://github.com/solrey3/Project1-2020.git
+[submodule "matplotlib-challenge"]
+	path = matplotlib-challenge
+	url = https://github.com/solrey3/matplotlib-challenge.git
+[submodule "pandas-challenge"]
+	path = pandas-challenge
+	url = https://github.com/solrey3/pandas-challenge.git
+[submodule "python-challenge"]
+	path = python-challenge
+	url = https://github.com/solrey3/python-challenge.git
+[submodule "VBA-challenge"]
+	path = VBA-challenge
+	url = https://github.com/solrey3/VBA-challenge.git
