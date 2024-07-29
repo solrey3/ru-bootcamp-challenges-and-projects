@@ -1,0 +1,30 @@
+[submodule "ru-bootcamp-challenges-and-projects"]
+	path = ru-bootcamp-challenges-and-projects
+	url = https://github.com/solrey3/ru-bootcamp-challenges-and-projects.git
+[submodule "machine-learning-challenge"]
+	path = machine-learning-challenge
+	url = https://github.com/solrey3/machine-learning-challenge.git
+[submodule "leaflet-challenge"]
+	path = leaflet-challenge
+	url = https://github.com/solrey3/leaflet-challenge.git
+[submodule "D3-challenge"]
+	path = D3-challenge
+	url = https://github.com/solrey3/D3-challenge.git
+[submodule "plotly-challenge"]
+	path = plotly-challenge
+	url = https://github.com/solrey3/plotly-challenge.git
+[submodule "javascript-challenge"]
+	path = javascript-challenge
+	url = https://github.com/solrey3/javascript-challenge.git
+[submodule "web-scraping-challenge"]
+	path = web-scraping-challenge
+	url = https://github.com/solrey3/web-scraping-challenge.git
+[submodule "Web-Design-Challenge"]
+	path = Web-Design-Challenge
+	url = https://github.com/solrey3/Web-Design-Challenge.git
+[submodule "sqlalchemy-challenge"]
+	path = sqlalchemy-challenge
+	url = https://github.com/solrey3/sqlalchemy-challenge.git
+[submodule "Project_2020_05"]
+	path = Project_2020_05
+	url = https://github.com/solrey3/Project_2020_05.git

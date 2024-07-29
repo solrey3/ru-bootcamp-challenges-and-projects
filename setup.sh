@@ -3,11 +3,11 @@
 # List of repositories to exclude
 
 # Get list of repositories to add as submodules
-repos=$(gh repo list your-username --json name --jq '.[].name' | grep -E '(-challenge|-Challenge|Project)')
+repos=$(gh repo list solrey3 --json name --jq '.[].name' | grep -E '(-challenge|-Challenge|Project)')
 
 for repo in $repos; do
   # Add the repository as a submodule
-  git submodule add https://github.com/your-username/$repo.git $repo
+  git submodule add https://github.com/solrey3/$repo.git $repo
 done
 
 # Initialize and update submodules
